@@ -14,5 +14,7 @@ namespace Product.Dtos
         [Required]
         [Range(1, 5)]
         public decimal Category { get; init;}
+        [Required]
+        public decimal Quantity { get; init;}
      }
 }

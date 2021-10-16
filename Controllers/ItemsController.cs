@@ -46,6 +46,7 @@ namespace Product.Controllers
                 Name = itemDto.Name,
                 Price = itemDto.Price,
                 Category = itemDto.Category,
+                Quantity = itemDto.Quantity,
                 CreatedDate = DateTimeOffset.UtcNow
             };
             repository.CreateItem(item);
@@ -63,6 +64,7 @@ namespace Product.Controllers
             Item updatedItem = existingItem with {
                 Name = itemDto.Name,
                 Price = itemDto.Price,
+                Quantity = itemDto.Quantity,
                 Category = itemDto.Category,
             };
 

@@ -9,6 +9,7 @@ namespace Product{
                 Id = item.Id,
                 Name = item.Name,
                 Price = item.Price,
+                Quantity = item.Quantity,
                 Category = item.Category,
                 CreatedDate = item.CreatedDate
             };
